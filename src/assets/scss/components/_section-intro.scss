@@ -1,0 +1,87 @@
+.mk-section-intro{
+	background: #000;
+	height: 100vh;
+	padding: 20px 0;
+
+	.mk-title{
+		color: #fff;
+		text-align: center;
+		margin: 200px 0 0;
+		position: relative;
+		z-index: 10;
+		font-family: 'Caveat', cursive;
+		font-size: 50px;
+
+		&::before, &::after{
+			content: "";
+			display: block;
+			position: absolute;
+			background: url("../img/ellipse.png");
+			z-index: -1;
+		}
+
+		&::before{
+			width: 100px;
+			height: 100px;
+			top: -45px;
+			left: 70px;
+			background-size: cover;
+		}
+
+		&::after{
+			width: 200px;
+			height: 200px;
+			bottom: -125px;
+			right: 40px;
+			background-size: cover;
+		}
+
+		@include breakpoint(large){
+			&::before{
+				width: 150px;
+				height: 150px;
+				top: -50px;
+				left: 70px;
+				background-size: cover;
+			}
+	
+			&::after{
+				width: 250px;
+				height: 250px;
+				bottom: -150px;
+				right: 40px;
+				background-size: cover;
+			}
+		}
+	}
+
+	.mk-person{
+		position: relative;
+		left: 80px;
+		img{
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.mk-cut{
+		position: relative;
+		left: 350px;
+		img{
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+		}
+	}
+
+	.mk-working{
+		position: relative;
+		top: -20px;
+		img{
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		}
+	}
+}

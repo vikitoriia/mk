@@ -1,0 +1,70 @@
+.mk-footer{
+	background: #000;
+	padding: 10px 0;
+
+	@include breakpoint(large){
+		padding: 20px 0;
+	}
+	
+	.mk-social{
+		
+		a{
+			color: #fff;
+			display: flex;
+			align-items: center;
+			margin: auto 0;
+
+			span{
+				transition: color 0.4s;
+			}
+
+			&:hover{
+				span{
+					color: #faa72a;
+				}
+			}
+
+			svg + span{
+				margin-left: 5px;
+			}
+		}
+
+		a + a{
+			margin-top: 5px;
+		}
+	}
+
+	.mk-logo{
+		text-align: center;
+	}
+
+	.mk-contact{
+		list-style: none;
+		text-align: left;
+
+		@include breakpoint(large){
+			text-align: right;
+		}
+
+		li{
+			span{
+				color: #fff;
+				font-family: 'Caveat', cursive;
+				font-size: 24px;
+
+				a{
+					color: #fff;
+					font-family: 'Caveat', cursive;
+
+					&:hover{
+						color: #faa72a;
+					}
+				}
+			}
+	
+			span+span{
+				margin-left: 10px;
+			}
+		}
+	}
+}

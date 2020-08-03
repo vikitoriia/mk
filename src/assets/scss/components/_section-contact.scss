@@ -1,0 +1,216 @@
+.mk-section-contact{
+	background: #fff;
+	padding: 30px 0;
+
+	@include breakpoint(large){
+		padding: 60px 0;
+	}
+
+	.mk-title{
+		color: #000;
+		text-align: center;
+		margin-bottom: 20px;
+		font-family: 'Caveat', cursive;
+		font-size: 50px;
+
+		@include breakpoint(large){
+			margin-bottom: 50px;
+		}
+	
+		&::after{
+			content: "";
+			display: block;
+			height: 3px;
+			width: 50px;
+			background: #000;
+			margin: 10px auto 0;
+		}
+	}
+
+	.mk-subtitle{
+		margin: 10px 0;
+		width: 100%;
+		text-align: center;
+
+		@include breakpoint(large){
+			width: 600px;
+			margin: 30px auto 20px;
+		}
+
+		p{
+			color: #000;
+			font-size: 28px;
+			font-family: 'Caveat', cursive;
+		}
+	}
+
+	.mk-phone{
+		margin: 0 auto;
+		min-width: 240px;
+		height: 52px;
+
+		.mk-phone-number{
+			text-align: center;
+			margin-top: 40px;
+
+			a{
+				background: #fff;
+				color: #faa72a;
+				padding: 15px 52px;
+				border: 3px solid #faa72a;
+				font-weight: bold;
+				font-family: 'Caveat', cursive;
+				font-size: 20px;
+
+				&:hover{
+					color: #fff;
+					background: #faa72a;
+				}
+			}
+		}
+	}
+
+	.input {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		margin: 0 1em;
+		max-width: 350px;
+		width: calc(100% - 2em);
+		vertical-align: top;
+		font-family: 'Caveat', cursive;
+		font-size: 16px;
+
+		@include breakpoint(large){
+			margin: 1em;
+		}
+	}
+	
+	.input__field {
+		position: relative;
+		display: block;
+		float: right;
+		padding: 0.8em;
+		width: 60%;
+		border: none;
+		border-radius: 0;
+		background: #f0f0f0;
+		color: #faa72a;
+		font-weight: 400;
+		font-family: 'Caveat', cursive;
+		font-size: 20px;
+	}
+	
+	.input__field:focus {
+		outline: none;
+	}
+	
+	.input__label {
+		display: inline-block;
+		float: right;
+		padding: 0 1em;
+		width: 40%;
+		color: #696969;
+		font-weight: bold;
+		user-select: none;
+	}
+	
+	.input__label-content {
+		position: relative;
+		display: block;
+		padding: 1.6em 0;
+		width: 100%;
+	}
+
+	.input--chisato {
+		padding-top: 1em;
+	}
+	
+	.input__field--chisato {
+		width: 100%;
+		padding: 20px;
+		background: transparent;
+		border: 3px solid #b5b5b5;
+		color: #b5b5b5;
+		transition: border-color 0.25s;
+	}
+	
+	.input__label--chisato {
+		width: 100%;
+		position: absolute;
+		top: -110px;
+		text-align: left;
+		overflow: hidden;
+		padding: 0;
+		pointer-events: none;
+		transform: translate3d(0, 3em, 0);
+		font-size: 20px;
+		color: #b5b5b5;
+	}
+
+	.input__field--chisato:focus{
+		border: 3px solid #faa72a;
+		color: #b5b5b5;
+	}
+
+	.input__field--chisato:focus + .input__label--chisato{
+		color: #faa72a;
+	}
+	
+
+
+	.mk-contact-button{
+		display: flex;
+		justify-content: center;
+
+		input {
+			border: none;
+			font-family: inherit;
+			font-size: inherit;
+			color: inherit;
+			background: none;
+			cursor: pointer;
+			padding: 15px 70px;
+			display: inline-block;
+			margin: 15px auto;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			outline: none;
+			position: relative;
+			transition: all 0.3s;
+			font-family: 'Caveat', cursive;
+		}
+		
+		input:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			transition: all 0.3s;
+		}
+		
+		input {
+			border: 3px solid #faa72a;
+			color: #faa72a;
+		}
+	
+		input:after {
+			width: 0%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: #faa72a;
+		}
+		
+		input:hover,
+		input:active {
+			color: #fff;
+			background: #faa72a;
+		}
+		
+		input:hover:after,
+		input:active:after {
+			width: 100%;
+		}	
+	}
+}
