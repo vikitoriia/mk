@@ -12585,7 +12585,6 @@ window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; // require('found
 
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 
 /***/ }),
 

@@ -14,5 +14,3 @@ window.jQuery = $;
 import './lib/foundation-explicit-pieces';
 
 import './lib/slick.min.js';
-
-$(document).foundation();
